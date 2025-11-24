@@ -26,7 +26,7 @@ interface CallToActionProps {
 export default function CTA({
   profileImage = ctaConfig.profileImage,
   profileAlt = ctaConfig.profileAlt,
-  linkText = ctaConfig.linkText,
+  linkText = ctaConfig.linkText, 
   calLink = ctaConfig.calLink,
   preText = ctaConfig.preText,
 }: CallToActionProps) {
@@ -137,3 +137,5 @@ export default function CTA({
     </>
   );
 }
+
+
