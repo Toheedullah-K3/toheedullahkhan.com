@@ -70,7 +70,7 @@ export default function SetupPage() {
                         download
                         className="flex flex-col sm:flex-row sm:items-center gap-3 p-3 md:p-4 bg-muted/50 rounded-lg border border-black/10 dark:border-white/10 w-full hover:bg-muted/70 transition-colors"
                       >
-                        <Download className="size-4 text-muted-foreground flex-shrink-0" />
+                        <Download className="size-4 text-muted-foreground shrink-0" />
                         <div className="flex-1">
                           <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
                             <span className="font-medium text-sm">
@@ -101,7 +101,7 @@ export default function SetupPage() {
 
                     {item.type === 'prompt' && (
                       <div className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg border border-black/10 dark:border-white/10 w-full">
-                        <FileText className="size-4 text-muted-foreground flex-shrink-0" />
+                        <FileText className="size-4 text-muted-foreground shrink-0" />
                         <code className="text-sm font-mono text-secondary break-all">
                           {item.text}
                         </code>

@@ -72,7 +72,7 @@ export default function CTA({
               onClick={handleButtonClick}
             >
               <div className="flex items-center gap-2 group-hover:gap-8 transition-all duration-300 relative z-20">
-                <div className="w-5 h-5 rounded-full overflow-hidden flex-shrink-0">
+                <div className="w-5 h-5 rounded-full overflow-hidden shrink-0">
                   <Image
                     alt={profileAlt}
                     width={20}
@@ -82,7 +82,7 @@ export default function CTA({
                     style={{ color: 'transparent' }}
                   />
                 </div>
-                <div className="flex items-center gap-0 absolute left-[24px] transform -translate-x-full opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300">
+                <div className="flex items-center gap-0 absolute left-6 transform -translate-x-full opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
