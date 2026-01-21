@@ -33,8 +33,9 @@ export default [
   {
     // Override rules
     rules: {
-      '@typescript-eslint/no-unused-vars': 'warn', // <-- WARN instead of ERROR
-      'import/no-anonymous-default-export': 'off', // optional
-    },
+  '@typescript-eslint/no-unused-vars': 'warn',
+  '@typescript-eslint/no-explicit-any': 'warn',
+  '@typescript-eslint/no-unused-expressions': 'warn',
+}
   },
 ];
