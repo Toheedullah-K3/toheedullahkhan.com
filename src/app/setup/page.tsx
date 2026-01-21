@@ -1,3 +1,4 @@
+settingsJson
 import Container from '@/components/common/Container';
 import CheckCircle from '@/components/svgs/CheckCircle';
 import { Separator } from '@/components/ui/separator';
@@ -99,7 +100,7 @@ export default function SetupPage() {
                       </div>
                     )}
 
-                    {item.type === 'prompt' && (
+                       {item.type === 'prompt' && (
                       <div className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg border border-black/10 dark:border-white/10 w-full">
                         <FileText className="size-4 text-muted-foreground shrink-0" />
                         <code className="text-sm font-mono text-secondary break-all">

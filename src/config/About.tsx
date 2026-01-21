@@ -22,5 +22,5 @@ export const mySkills = [
 
 export const about = {
   name: 'Toheed Ullah Khan',
-  description: `I'm a Full Stack web developer and Open Source Contributor, I love building products to solve real-world problems. I'm specialized in building MVP's.`,
+  description: `I’m a Full-Stack Web Developer with MERN stack experience. I love building scalable products that solve real-world problems and specialize in developing MVPs.`,
 };
