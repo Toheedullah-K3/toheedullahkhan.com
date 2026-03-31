@@ -55,7 +55,7 @@ export const heroConfig = {
   // Personal Information
   name: 'Toheed',
   title: 'Full Stack web developer.',
-  avatar: '/assets/logo6.png',
+  avatar: '/assets/dp.png',
 
   // Skills Configuration
   skills: [
