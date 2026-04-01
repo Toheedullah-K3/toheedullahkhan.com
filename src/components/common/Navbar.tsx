@@ -23,7 +23,8 @@ export default function Navbar() {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <ThemeToggleButton variant="circle" start="top-right" blur />
+          {/* <ThemeToggleButton variant="circle" start="top-right" blur />   -   with Animation */} 
+          <ThemeToggleButton  />
         </div>
       </div>
     </Container>

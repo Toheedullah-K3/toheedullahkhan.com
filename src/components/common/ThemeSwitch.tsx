@@ -3,29 +3,31 @@
 import { useTheme } from 'next-themes';
 import { Moon, Sun } from 'lucide-react';
 import { Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/tooltip';
+import { useEffect, useState } from 'react';
+
 export const ThemeToggleButton = () => {
   const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
   const isDark = resolvedTheme === 'dark';
 
   return (
     <Tooltip>
-      <TooltipTrigger>
-        <button 
-          onClick={() => setTheme(isDark ? 'light' : 'dark')} 
+      <TooltipTrigger asChild>
+        <button
+          onClick={() => setTheme(isDark ? 'light' : 'dark')}
           aria-label="Toggle theme"
           className="cursor-pointer rounded-md p-2 transition-colors hover:bg-black/5 dark:hover:bg-white/10"
         >
-      {isDark ?  <Sun size={16} /> : <Moon size={16} />}
-    </button>
+          {mounted ? (isDark ? <Sun size={16} /> : <Moon size={16} />) : <span className="size-4" />}
+        </button>
       </TooltipTrigger>
-      <TooltipContent>
-        Toggle Mode
-      </TooltipContent>
+      <TooltipContent>Toggle Mode</TooltipContent>
     </Tooltip>
-    
   );
 };
-
 
 
 

@@ -33,10 +33,12 @@ export default function ResumePage() {
           </p>
         </div>
         <Separator />
-        <div className="mx-auto max-w-2xl">
+        <div className="mx-auto max-w-4xl w-full">
           <iframe
             src={resumeConfig.url}
-            className="w-full min-h-screen"
+            className="w-full border-none"
+            style={{ height: '2100px' }}
+            scrolling="no"
           ></iframe>
         </div>
       </div>
