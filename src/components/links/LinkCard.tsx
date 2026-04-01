@@ -20,7 +20,7 @@ export const LinkCard = forwardRef<HTMLAnchorElement, LinkCardProps>(
         rel="noopener noreferrer"
         className={cn(
           "group relative overflow-hidden flex items-center gap-3 rounded-xl border border-dashed px-4 py-3 text-sm sm:px-5 sm:py-4",
-          "bg-neutral-950/60 transition-all duration-300 ease-out",
+          " transition-all duration-300 ease-out",
           "hover:bg-accent hover:text-accent-foreground",
           "hover:border-accent/40"
         )}
@@ -29,7 +29,7 @@ export const LinkCard = forwardRef<HTMLAnchorElement, LinkCardProps>(
         transition={{ delay: 0.04 * index, duration: 0.28, ease: 'easeOut' }}
       >
 
-        <div className="flex size-9 items-center justify-center  rounded-lg border border-white/5 bg-neutral-900/80 text-secondary shadow-sm group-hover:border-dashed">
+        <div className="flex size-9 items-center justify-center  rounded-lg border text-secondary shadow-sm group-hover:border-dashed">
           {link.icon}
         </div>
         <div className="flex min-w-0 flex-1 flex-col text-left">

@@ -9,7 +9,7 @@ import { primaryLinks, secondaryLinks } from '@/config/Links';
 export function LinksShell() {
   return (
     <motion.section
-      className="mx-auto flex w-full max-w-xl flex-col gap-8 rounded-3xl border border-white/5 bg-neutral-950/70 px-5 py-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] backdrop-blur-2xl sm:px-8 sm:py-8"
+      className="mx-auto flex w-full max-w-xl flex-col gap-8 rounded-3xl border px-5 py-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] backdrop-blur-2xl sm:px-8 sm:py-8"
       initial={{ opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: 'easeOut' }}
@@ -37,7 +37,7 @@ export function LinksShell() {
         </section>
       )}
 
-      <footer className="mt-2 flex flex-col items-center gap-4 border-t border-white/5 pt-4 text-xs text-muted-foreground">
+      <footer className="mt-2 flex flex-col items-center gap-4 border-t pt-4 text-xs text-muted-foreground">
         <SocialLinks />
         <p className="text-[0.7rem] text-muted-foreground/80">
           Built with Next.js, Tailwind CSS, and a focus on performant frontend

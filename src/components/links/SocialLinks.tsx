@@ -21,7 +21,7 @@ export function SocialLinks({ className }: SocialLinksProps) {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-full border border-dashed px-3 py-1.5 transition hover:border-accent/40 hover:bg-neutral-900"
+              className="flex items-center gap-2 rounded-full border border-dashed px-3 py-1.5 transition hover:bg-accent hover:text-accent-foreground hover:border-accent/40"
             >
               <span className="text-secondary">{item.icon}</span>
               <span className="hidden sm:inline">{item.label}</span>

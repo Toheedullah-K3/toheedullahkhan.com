@@ -9,19 +9,27 @@ export const navbarConfig = {
     alt: 'logo',
     width: 100,
     height: 100,
-  },
+  }, 
   navItems: [
+    {
+      label: 'Home',
+      href: '/',
+    },
     {
       label: 'Work',
       href: '/work-experience',
     },
     {
-      label: 'Blogs',
-      href: '/blog',
-    },
-    {
       label: 'Projects',
       href: '/projects',
+    },
+    {
+      label: 'Resume',
+      href: '/resume',
+    },
+    {
+      label: 'Links',
+      href: '/links',
     },
   ] as NavItem[],
 };
