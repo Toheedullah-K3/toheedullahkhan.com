@@ -8,6 +8,7 @@ import {
   FileText,
   Code2,
   NotebookPen,
+  Sparkles,
 } from 'lucide-react';
 
 export type LinkItem = {
@@ -17,6 +18,8 @@ export type LinkItem = {
   description?: string;
   icon: ReactElement;
   featured?: boolean;
+  featuredWord?: string;
+  featuredColor?: string;
 };
 
 export type SocialLinkItem = {
@@ -27,9 +30,9 @@ export type SocialLinkItem = {
 };
 
 export const profileInfo = {
-  name: 'Toheedullah Khan',
+  name: 'Toheed Ullah Khan',
   handle: '@toheedullahkhan',
-  tagline: 'Building thoughtful web experiences & performant frontends.',
+  tagline: 'Full-stack developer who lead, build, and ship.',
   avatar: '/assets/dp.png',
   location: 'Pakistan',
 };
@@ -38,18 +41,18 @@ export const primaryLinks: LinkItem[] = [
   {
     id: 'portfolio',
     title: 'Portfolio Website',
-    href: '/',
+    href: 'https://www.toheedullahkhan.com/',
     description: 'Case studies, projects, and everything I am working on.',
     icon: <Globe className="size-4" />,
     featured: true,
+    featuredWord: 'Apex',
   },
   {
     id: 'github',
     title: 'GitHub',
-    href: 'https://github.com/toheedullahkhan',
+    href: 'https://github.com/Toheedullah-K3',
     description: 'Open-source work, experiments, and contributions.',
     icon: <Github className="size-4" />,
-    featured: true,
   },
   {
     id: 'resume',
@@ -59,16 +62,16 @@ export const primaryLinks: LinkItem[] = [
     icon: <FileText className="size-4" />,
   },
   {
-    id: 'blogs',
-    title: 'Technical Writing',
-    href: '/blog',
-    description: 'Deep dives into frontend, performance, and DX.',
-    icon: <NotebookPen className="size-4" />,
+    id: 'linkedin',
+    title: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/toheed-ullah-khanx/',
+    description: 'Professional profile, career highlights, and networking.',
+    icon: <Linkedin className="size-4" />,
   },
   {
     id: 'code-playground',
     title: 'Code & Experiments',
-    href: 'https://github.com/toheedullahkhan?tab=repositories',
+    href: 'https://github.com/Toheedullah-K3?tab=repositories',
     description: 'Small experiments and prototypes I am playing with.',
     icon: <Code2 className="size-4" />,
   },
@@ -76,11 +79,11 @@ export const primaryLinks: LinkItem[] = [
 
 export const secondaryLinks: LinkItem[] = [
   {
-    id: 'work-experience',
-    title: 'Work Experience',
-    href: '/work-experience',
-    description: 'Roles, responsibilities, and what I shipped.',
-    icon: <Globe className="size-4" />,
+    id: 'the-vault',
+    title: 'The Vault',
+    href: '/vault',
+    description: 'A curated collection of hidden gems, experiments, and creative ideas.',
+    icon: <Sparkles className="size-4" />,
   },
 ];
 
@@ -88,25 +91,25 @@ export const socialLinks: SocialLinkItem[] = [
   {
     id: 'email',
     label: 'Email',
-    href: 'mailto:hello@toheedullahkhan.com',
+    href: 'mailto:toheedullah002@gmail.com',
     icon: <Mail className="size-4" />,
   },
   {
     id: 'linkedin',
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/toheedullahkhan',
+    href: 'https://www.linkedin.com/in/toheed-ullah-khanx/',
     icon: <Linkedin className="size-4" />,
   },
   {
     id: 'twitter',
     label: 'X (Twitter)',
-    href: 'https://x.com/toheedullahk',
+    href: 'https://x.com/t_o_h_e_e_d__',
     icon: <Twitter className="size-4" />,
   },
   {
     id: 'github',
     label: 'GitHub',
-    href: 'https://github.com/toheedullahkhan',
+    href: 'https://github.com/Toheedullah-K3',
     icon: <Github className="size-4" />,
   },
 ];

@@ -19,14 +19,17 @@ export const LinkCard = forwardRef<HTMLAnchorElement, LinkCardProps>(
         target="_blank"
         rel="noopener noreferrer"
         className={cn(
-          'group relative flex items-center gap-3 rounded-xl border border-white/5 bg-neutral-950/60 px-4 py-3 text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 sm:px-5 sm:py-4',
-          'hover:border-indigo-500/40 hover:bg-neutral-900/80',
+          "group relative overflow-hidden flex items-center gap-3 rounded-xl border border-dashed px-4 py-3 text-sm sm:px-5 sm:py-4",
+          "bg-neutral-950/60 transition-all duration-300 ease-out",
+          "hover:bg-accent hover:text-accent-foreground",
+          "hover:border-accent/40"
         )}
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.04 * index, duration: 0.28, ease: 'easeOut' }}
       >
-        <div className="flex size-9 items-center justify-center rounded-lg border border-white/5 bg-neutral-900/80 text-indigo-300 shadow-sm group-hover:border-indigo-500/40 group-hover:bg-neutral-900 group-hover:text-indigo-200">
+
+        <div className="flex size-9 items-center justify-center  rounded-lg border border-white/5 bg-neutral-900/80 text-secondary shadow-sm group-hover:border-dashed">
           {link.icon}
         </div>
         <div className="flex min-w-0 flex-1 flex-col text-left">
@@ -41,15 +44,16 @@ export const LinkCard = forwardRef<HTMLAnchorElement, LinkCardProps>(
         </div>
         <div className="ml-2 flex items-center gap-2">
           {link.featured && (
-            <span className="hidden rounded-full bg-indigo-500/10 px-2 py-0.5 text-[0.65rem] font-medium text-indigo-300 sm:inline-flex">
-              Featured
-            </span>
+            <div className="flex items-center gap-1 rounded-md border-green-300 bg-green-500/10 px-2 py-1 text-xs">
+              <div className="size-2 animate-pulse rounded-full bg-green-500"></div>
+              {link.featuredWord}
+            </div>
           )}
-          <span className="text-xs text-muted-foreground transition group-hover:text-indigo-300">
-            ↗
-          </span>
+<span className="text-xs text-muted-foreground transition-transform duration-300 transform group-hover:rotate-45">
+  ↗
+</span>
         </div>
-        <span className="pointer-events-none absolute inset-0 rounded-xl bg-gradient-to-tr from-indigo-500/10 via-sky-500/10 to-emerald-400/10 opacity-0 blur-lg transition-opacity duration-300 group-hover:opacity-100" />
+        <span className="pointer-events-none absolute inset-0 rounded-xl bg-linear-to-tr from-indigo-500/10 via-sky-500/10 to-emerald-400/10 opacity-0 blur-lg transition-opacity duration-300 " />
       </MotionA>
     );
   },

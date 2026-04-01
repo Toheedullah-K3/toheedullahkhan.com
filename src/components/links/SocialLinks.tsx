@@ -21,9 +21,9 @@ export function SocialLinks({ className }: SocialLinksProps) {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-full border border-white/5 bg-neutral-950/60 px-3 py-1.5 transition hover:border-indigo-500/50 hover:bg-neutral-900 hover:text-indigo-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950"
+              className="flex items-center gap-2 rounded-full border border-dashed px-3 py-1.5 transition hover:border-accent/40 hover:bg-neutral-900"
             >
-              <span className="text-indigo-300">{item.icon}</span>
+              <span className="text-secondary">{item.icon}</span>
               <span className="hidden sm:inline">{item.label}</span>
             </a>
           </TooltipTrigger>
