@@ -8,6 +8,7 @@ import { ThemeProvider } from '@/components/common/ThemeProviders';
 import { generateMetadata as getMetadata } from '@/config/Meta';
 import ReactLenis from 'lenis/react';
 import { ViewTransitions } from 'next-view-transitions';
+import { Analytics } from "@vercel/analytics/next"
 
 import './globals.css';
 
@@ -36,6 +37,7 @@ export default function RootLayout({
               <Footer />
               {/* <ChatBubble /> */}
               <UmamiAnalytics />
+              <Analytics/>
             </ReactLenis>
           </ThemeProvider>
         </body>
