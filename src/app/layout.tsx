@@ -28,7 +28,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <ReactLenis root>
+            <ReactLenis  root>
               <Navbar />
               {children}
               <OnekoCat />
