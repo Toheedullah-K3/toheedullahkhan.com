@@ -171,6 +171,9 @@ export function generateMetadata(pathname: string) {
 
   return {
     metadataBase: new URL(siteConfig.url),
+    verification: {
+      google: "BkjP9DPO1b8ST95xTm-iDNjN1h85Hxbi65sXB35F6co",
+    },
     title: pageMeta.title,
     description: pageMeta.description,
     keywords: pageMeta.keywords?.join(', '),
