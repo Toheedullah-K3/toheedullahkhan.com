@@ -1,34 +1,28 @@
-import Headphones from '@/components/svgs/devices/Headphones';
-import Keyboard from '@/components/svgs/devices/Keyboard';
 import Laptop from '@/components/svgs/devices/Laptop';
 import Monitor from '@/components/svgs/devices/Monitor';
-import Mouse from '@/components/svgs/devices/Mouse';
 import Phone from '@/components/svgs/devices/Phone';
+import { Cpu, MemoryStick } from 'lucide-react';
 
 export const devices = [
   {
-    name: 'Apple MacBook Pro 16"in M4 48GB 512GB',
+    name: "iPhone 12 Pro Max",
+    icon: <Phone className="size-4" />,
+  },
+  {
+    name: "Laptop - AMD Ryzen 7 PRO 3700U w/ Radeon Vega Mobile Gfx 2.30 GHz",
     icon: <Laptop className="size-4" />,
   },
   {
-    name: 'LG Ultragear 27GN650 (27 inch, 68.5 cm)',
+    name: "Laptop RAM - 16 GB",
+    icon: <MemoryStick className="size-4" />,
+  },
+  {
+    name: "PC - Intel i5 12th Gen",
     icon: <Monitor className="size-4" />,
   },
   {
-    name: 'Magic Keyboard',
-    icon: <Keyboard className="size-4" />,
-  },
-  {
-    name: 'Logitech MX Master 3S Mouse',
-    icon: <Mouse className="size-4" />,
-  },
-  {
-    name: 'Crossbeats Roar 2.0 (Special Addition)',
-    icon: <Headphones className="size-4" />,
-  },
-  {
-    name: 'Samsung S23 (256 GB)',
-    icon: <Phone className="size-4" />,
+    name: "GPU - NVIDIA GTX 1660",
+    icon: <Cpu className="size-4" />,
   },
 ];
 

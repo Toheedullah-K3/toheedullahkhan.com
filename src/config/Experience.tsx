@@ -193,13 +193,13 @@ export const experiences: Experience[] = [
         icon: <Vercel />,
       },
     ],
-    website: 'https://expelee.com',
+    website: 'https://azpvtltd.org',
   },
   {
     isCurrent: false,
     company: 'Sky Cars',
     position: 'Website Manager & SEO Specialist (Remote)',
-    location: 'UAE (Remote)',
+    location: 'Pakistan (Remote)',
     image: '/company/skycars.png',
     description: [
       'Managed and optimized the entire WordPress website, focusing on SEO, performance improvements, and UX enhancements.',
@@ -210,8 +210,8 @@ export const experiences: Experience[] = [
     startDate: 'Feb 2024',
     endDate: 'Feb 2025',
     website: 'https://skycars.pk/',
-    x: 'https://x.com/Flameloop149578',
-    linkedin: 'https://www.linkedin.com/company/flameloop',
+    x: '#',
+    linkedin: '#',
     technologies: [
       {
         name: 'HTML',
