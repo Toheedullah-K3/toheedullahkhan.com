@@ -27,8 +27,8 @@ export const projects: Project[] = [
     description:
       'A comprehensive study platform with notes, flashcards, quizzes, AI chatbot, and interactive learning tools',
     image: '/project/devtrack.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/notesbuddy.mp4?tr=orig',
-    link: 'https://notesbuddy.in',
+    video: '',
+    link: 'https://github.com/ToheedUllah-K3/DevTrack',
     technologies: [
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
@@ -40,9 +40,9 @@ export const projects: Project[] = [
       { name: 'MDX', icon: <MDXIcon key="mdx" /> },
     ],
     github: 'https://github.com/ToheedUllah-K3/DevTrack',
-    live: 'https://devtrack.toheedullahkhan.com',
+    live: 'https://github.com/ToheedUllah-K3/DevTrack',
     details: true,
-    projectDetailsPageSlug: '/projects/notesbuddy',
+    projectDetailsPageSlug: '/projects/devtrack',
     isWorking: true,
   },
   {
