@@ -23,9 +23,9 @@ import { Project } from '@/types/project';
 
 export const projects: Project[] = [
   {
-    title: 'NotesBuddy',
+    title: 'DevTrack',
     description:
-      'A comprehensive study platform with notes, flashcards, quizzes, AI chatbot, and interactive learning tools',
+      'A comprehensive project management and time tracking tool designed to help developers and teams efficiently manage tasks, track time, and visualize project progress with an intuitive dashboard and real-time collaboration features.',
     image: '/project/devtrack.png',
     video: '',
     link: 'https://github.com/ToheedUllah-K3/DevTrack',
