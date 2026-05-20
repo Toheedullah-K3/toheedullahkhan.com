@@ -13,5 +13,5 @@ export const certificates = [
 ];
 
 export default {
-  // certificates,
+  certificates,
 };
