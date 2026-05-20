@@ -45,7 +45,7 @@ export const experiences: Experience[] = [
   {
     isCurrent: true,
     company: 'GN Group of Companies',
-    position: 'Lead Web Developer',
+    position: 'Full Stack Engineer',
     location: 'Islamabad, Pakistan (On-site)',
     image: '/company/gntech.png',
     description: [
