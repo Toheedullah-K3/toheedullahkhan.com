@@ -14,7 +14,7 @@ export const siteConfig = {
   name: heroConfig.name,
   title: 'Sleek Portfolio',
   description: 'Sleek Portfolio Template by @Toheedullah-K3',
-  url: process.env.NEXT_PUBLIC_URL || 'http://localhost:3000',
+  url: process.env.NEXT_PUBLIC_URL || 'http://toheedullahkhan,com',
   ogImage: '/meta/opengraph-image.png',
   author: {
     name: about.name,
