@@ -168,6 +168,7 @@ export function getPageMetadata(pathname: string): PageMeta {
 // Helper function to generate complete metadata object for Next.js
 export function generateMetadata(pathname: string) {
   const pageMeta = getPageMetadata(pathname);
+  const ogImageUrl = `${siteConfig.url}${pageMeta.ogImage || siteConfig.ogImage}`;
 
   return {
     metadataBase: new URL(siteConfig.url),
@@ -187,7 +188,7 @@ export function generateMetadata(pathname: string) {
       siteName: siteConfig.title,
       images: [
         {
-          url: pageMeta.ogImage || siteConfig.ogImage,
+          url: ogImageUrl,
           width: 1200,
           height: 630,
           alt: pageMeta.title,
@@ -199,7 +200,7 @@ export function generateMetadata(pathname: string) {
       title: pageMeta.title,
       description: pageMeta.description,
       creator: siteConfig.author.twitter,
-      images: [pageMeta.ogImage || siteConfig.ogImage],
+      images: [ogImageUrl],
     },
     robots: {
       index: true,
