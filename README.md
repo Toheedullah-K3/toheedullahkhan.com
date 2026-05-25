@@ -94,7 +94,7 @@ NEXT_PUBLIC_UMAMI_ID="your-umami-website-id"
    npm run dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+4. Open [https://toheedullahkhan.com](https://toheedullahkhan.com) in your browser
 
 ## Configuration
 
