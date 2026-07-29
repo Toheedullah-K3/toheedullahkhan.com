@@ -44,6 +44,49 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     isCurrent: true,
+    company: 'Zaytrics',
+    position: 'Full Stack Engineer',
+    location: 'Islamabad, Pakistan',
+    image: '/company/zaytrics.png',
+    description: [
+      'Developed and optimized features for both mobile and web applications, ensuring high performance, responsive UI, and seamless cross-platform integration.',
+      'Architected and implemented robust backend services and RESTful APIs using NestJS, improving system scalability and API response times.',
+      'Orchestrated data models and migrations using Prisma ORM with PostgreSQL, ensuring optimal query performance and database integrity.',
+      'Collaborated closely with cross-functional teams to translate user requirements into technical specifications and maintainable codebases.',
+    ],
+    startDate: 'June 2026',
+    endDate: 'Present',
+    technologies: [
+      {
+        name: 'NestJS',
+        href: 'https://nestjs.com/',
+        icon: <NestJs />,
+      },
+      {
+        name: 'Prisma',
+        href: 'https://www.prisma.io/',
+        icon: <Prisma />,
+      },
+      {
+        name: 'PostgreSQL',
+        href: 'https://www.postgresql.org/',
+        icon: <PostgreSQL />,
+      },
+      {
+        name: 'TypeScript',
+        href: 'https://www.typescriptlang.org/',
+        icon: <TypeScript />,
+      },
+      {
+        name: 'React',
+        href: 'https://react.dev/',
+        icon: <ReactIcon />,
+      },
+    ],
+    website: 'https://zaytrics.com/',
+  },
+  {
+    isCurrent: false,
     company: 'GN Group of Companies',
     position: 'Full Stack Engineer',
     location: 'Islamabad, Pakistan (On-site)',
@@ -56,7 +99,7 @@ export const experiences: Experience[] = [
       'Collaborated directly with cross-functional teams and clients to translate requirements into clean, maintainable, and high-performance web applications.',
     ],
     startDate: 'Dec 2024',
-    endDate: 'Present',
+    endDate: 'May 2026',
     technologies: [
       {
         name: 'Next.js',
