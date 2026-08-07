@@ -12,8 +12,9 @@ export interface PageMeta {
 // Base site configuration
 export const siteConfig = {
   name: heroConfig.name,
-  title: 'Sleek Portfolio',
-  description: 'Sleek Portfolio Template by @Toheedullah-K3',
+  title: 'Toheed Ullah Khan | Full Stack Web Developer',
+  description:
+    'Full-Stack Software Engineer with MERN, NestJS & Next.js experience. Building scalable web products, REST APIs, and high-performance applications.',
   url: process.env.NEXT_PUBLIC_URL || 'https://www.toheedullahkhan.com',
   ogImage: '/meta/opengraph-image.png',
   author: {

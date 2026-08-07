@@ -1,7 +1,7 @@
 import Container from '@/components/common/Container';
 import { Separator } from '@/components/ui/separator';
-import { resumeConfig } from '@/config/Resume';
 import { generateMetadata as getMetadata } from '@/config/Meta';
+import PdfViewer from '@/components/resume/PdfViewer';
 import { Metadata } from 'next';
 import React from 'react';
 
@@ -26,20 +26,15 @@ export default function ResumePage() {
       <div className="space-y-8">
         <div className="space-y-4 text-center">
           <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">
-            Resume
+            Resume / CV
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-            My resume.
+            View or download my professional resume.
           </p>
         </div>
         <Separator />
         <div className="mx-auto max-w-4xl w-full">
-          <iframe
-            src={resumeConfig.url}
-            className="w-full border-none"
-            style={{ height: '2100px' }}
-            scrolling="no"
-          ></iframe>
+          <PdfViewer />
         </div>
       </div>
     </Container>

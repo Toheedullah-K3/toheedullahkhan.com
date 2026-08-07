@@ -57,7 +57,7 @@ export const primaryLinks: LinkItem[] = [
   {
     id: 'resume',
     title: 'Download Résumé',
-    href: '/resume.pdf',
+    href: '/assets/resume.pdf',
     description: 'One-page overview of my experience and skills.',
     icon: <FileText className="size-4" />,
   },
