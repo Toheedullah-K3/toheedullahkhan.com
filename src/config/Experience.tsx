@@ -14,6 +14,8 @@ import PostgreSQL from '@/components/technologies/PostgreSQL';
 import Postman from '@/components/technologies/Postman';
 import Prisma from '@/components/technologies/Prisma';
 import ReactIcon from '@/components/technologies/ReactIcon';
+import Redis from '@/components/technologies/Redis';
+import Redux from '@/components/technologies/Redux';
 import TailwindCss from '@/components/technologies/TailwindCss';
 import TypeScript from '@/components/technologies/TypeScript';
 import Vercel from '@/components/technologies/Vercel';
@@ -81,6 +83,36 @@ export const experiences: Experience[] = [
         name: 'React',
         href: 'https://react.dev/',
         icon: <ReactIcon />,
+      },
+      {
+        name: 'Next.js',
+        href: 'https://nextjs.org/',
+        icon: <NextJs />,
+      },
+      {
+        name: 'Node.js',
+        href: 'https://nodejs.org/',
+        icon: <NodeJs />,
+      },
+      {
+        name: 'Express',
+        href: 'https://expressjs.com/',
+        icon: <ExpressJs />,
+      },
+      {
+        name: 'Redis',
+        href: 'https://redis.io/',
+        icon: <Redis />,
+      },
+      {
+        name: 'Redux',
+        href: 'https://redux.js.org/',
+        icon: <Redux />,
+      },
+      {
+        name: 'Postman',
+        href: 'https://www.postman.com/',
+        icon: <Postman />,
       },
     ],
     website: 'https://zaytrics.com/',
@@ -253,8 +285,6 @@ export const experiences: Experience[] = [
     startDate: 'Feb 2024',
     endDate: 'Feb 2025',
     website: 'https://skycars.pk/',
-    x: '#',
-    linkedin: '#',
     technologies: [
       {
         name: 'HTML',
