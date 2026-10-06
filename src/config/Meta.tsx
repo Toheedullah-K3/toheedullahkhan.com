@@ -175,6 +175,15 @@ export function generateMetadata(pathname: string) {
     verification: {
       google: "BkjP9DPO1b8ST95xTm-iDNjN1h85Hxbi65sXB35F6co",
     },
+    icons: {
+      icon: [
+        { url: '/icon.svg', type: 'image/svg+xml' },
+        { url: '/favicon.ico', sizes: 'any' },
+        { url: '/icon.png', type: 'image/png', sizes: '512x512' },
+      ],
+      shortcut: '/favicon.ico',
+      apple: '/apple-icon.png',
+    },
     title: pageMeta.title,
     description: pageMeta.description,
     keywords: pageMeta.keywords?.join(', '),

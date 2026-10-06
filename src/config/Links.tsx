@@ -33,7 +33,7 @@ export const profileInfo = {
   name: 'Toheed Ullah Khan',
   handle: '@toheedullahkhan',
   tagline: 'Full-stack developer who lead, build, and ship.',
-  avatar: '/assets/dp.png',
+  avatar: '/assets/avatar.jpeg',
   location: 'Pakistan',
 };
 
